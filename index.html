@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Characters of the Bible</h1>
+    <!-- create the quiz in a form -->
+    <form name="quiz" id="quiz">
+        <div class="quest1 ask">
+            <p class="what">1. What is your favorite fruit?</p>
+            <p class="answers" id="answers">
+                <input type="radio" name="q1answer" value="Blueberry">A. Blueberry
+                <input type="radio" name="q1answer" value="Strawberry">B. Strawberry
+                <input type="radio" name="q1answer" value="Mango">C. Mango
+                <input type="radio" name="q1answer" value="Pineapple">D. Pineapple
+            </p>
+        </div>
+
+        <br>
+        
+        <div class="quest2 ask">
+            <p class="what">1. What is your favorite vegetable?</p>
+            <p class="answers" id="answers">
+                <input type="radio" name="q2answer" value="Cucumber">A. Cucumber
+                <input type="radio" name="q2answer" value="Zucchini">B. Zucchini
+                <input type="radio" name="q2answer" value="Squash">C. Squash
+                <input type="radio" name="q2answer" value="Brussell Sprouts">D. Brussell Sprouts
+            </p>
+        </div>
+
+        <br>
+
+        <div class="quest3 ask">
+            <p class="what">1. What is your favorite drink?</p>
+            <p class="answers" id="answers"> 
+                <input type="radio" name="q3answer" value="soda">A. soda
+                <input type="radio" name="q3answer" value="beer">B. beer
+                <input type="radio" name="q3answer" value="shake">C. shake
+                <input type="radio" name="q3answer" value="water">D. water
+            </p>
+        </div>
+
+        <br>
+
+        <div class="quest4 ask">
+            <p class="what">1. What is your favorite dipping sauce?</p>
+            <p class="answers" id="answers">
+                <input type="radio" name="q4answer" value="bbq">A. bbq
+                <input type="radio" name="q4answer" value="ranch">B. ranch
+                <input type="radio" name="q4answer" value="honey mustard">C. honey mustard
+                <input type="radio" name="q4answer" value="sweet-n-sour">D. sweet-n-sour
+            </p>
+        </div>
+
+        <br>
+
+        <!-- button to get results -->
+        <!-- <input type="button" value="See Results" id="button" onclick="theResults()"> -->
+
+        
+    </form>
+        <!-- Create Modal Button-->
+        <button id="myBtn">See Results</button>
+        <!-- The Modal-->
+        <div id="myModal" class="modal">
+            <!--Modal Content-->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Your Results</h1>
+                <p id="results"></p>
+            </div>
+        </div>
+    
+
+
+        <!-- Get the Modal to print results -->
+        <!--<p id="results"></p> -->
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
